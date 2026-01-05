@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "28746c80-9008-42e6-8105-2d79fbfc8943",
+		"name": "trabajo final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "51233991",
+		"_collection_link": "https://jaimemloran-9196468.postman.co/workspace/Trabajo-final~f77e06b5-ff53-4e55-93a6-a54f03dec15b/collection/51233991-28746c80-9008-42e6-8105-2d79fbfc8943?action=share&source=collection_link&creator=51233991"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Pizza Margherita\",\r\n  \"description\": \"Classic pizza\",\r\n  \"sku\": \"PIZZA-001\",\r\n  \"price\": 9.99,\r\n  \"stock\": 10,\r\n  \"currency\": \"EUR\"\r\n}\r\n    ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/products\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"products\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "Get All Products",
+					"host": [
+						"Get All Products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Product By Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Update Product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Pizza Updated\",\r\n  \"description\": \"Updated\",\r\n  \"sku\": \"PIZZA-001\",\r\n  \"price\": 11.99,\r\n  \"stock\": 20,\r\n  \"currency\": \"EUR\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/api/v1/products/PEGA_AQUI_EL_ID\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"PEGA_AQUI_EL_ID\n"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/products/\n",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"\n"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
