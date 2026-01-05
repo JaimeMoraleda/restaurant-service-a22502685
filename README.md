@@ -93,5 +93,4 @@ Flyway-based schema management
 
 The main blocking issues were related to local infrastructure and environment configuration, not architectural design or code structure.
 
-## 🗂️ Project Structure
 
